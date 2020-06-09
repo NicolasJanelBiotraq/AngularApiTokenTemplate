@@ -1,0 +1,14 @@
+<form (ngSubmit)="addUser()">
+
+    <label>Nom d'utilisateur</label>
+    <input name="username" [(ngModel)]="user.username">
+    <hr>
+    <label>Email</label>
+    <input name="email" [(ngModel)]="user.email">
+    <hr>
+    <label>Mot de passe</label>
+    <input name="password" [(ngModel)]="user.password">
+    <hr>
+
+    <button>Ajouter</button>
+</form>

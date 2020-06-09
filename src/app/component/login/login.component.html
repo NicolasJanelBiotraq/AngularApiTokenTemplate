@@ -1,0 +1,14 @@
+<form (ngSubmit)="login()">
+
+    <label>Nom d'utilisateur</label>
+    <input name="username" [(ngModel)]="username">
+    <hr>
+    <label>Mot de passe</label>
+    <input name="password" [(ngModel)]="password">
+    <hr>
+    <p *ngIf="errorMessage">
+        {{errorMessage}}
+    </p>
+
+    <button>Se connecter</button>
+</form>
